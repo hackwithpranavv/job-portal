@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-jobseeker, .btn-employer {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-jobseeker { background: #006699; color: white; }
+.btn-employer { background: #007bb5; color: white; margin-left: 10px; }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #3b5998, #4facfe);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.search-container input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 200px;
+    border-right: 1px solid #ddd;
+}
+
+.btn-search {
+    background: #203a71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 10%;
+    background: #f9f9f9;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #006699;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-info h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.stat-card i {
+    font-size: 30px;
+    color: #203a71;
+}
