@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Fair - Got My Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Got My Job
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job-fair.html">Job Fair</a></li>
+            <li><a href="post_job.html">Post Your Jobs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="fair-container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showSection('available')">Available Jobs</button>
+            <button class="tab-btn" onclick="showSection('applied')">Jobs Applied</button>
+        </div>
+
+        <section id="available-section">
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Social Media Intern</h3>
+                    <p>Open AI • Remote</p>
+                </div>
+                <button class="btn-apply" onclick="applyJob(this, 'Social Media Intern')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Frontend Developer</h3>
+                    <p>Gama • Onsite</p>
+                </div>
+                <button class="btn-apply" onclick="applyJob(this, 'Social Media Intern')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Full Stack Developer</h3>
+                    <p>Amazon • Onsite</p>
+                </div>
+                <button class="btn-apply" onclick="applyJob(this, 'Social Media Intern')">Apply Now</button>
+            </div>
+
+        </section>
+
+        <section id="applied-section" style="display: none;">
+            <div id="applied-container"></div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-bottom"><p>Copyright © 2026 - Got My Job</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-jobseeker, .btn-employer {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+body {
+    background: linear-gradient(135deg, #3b5998, #4facfe);
+    min-height: 100vh;
+}
+
+.post-job-body {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 850px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-card h2 {
+    text-align: center;
+    color: #3b5998;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4facfe;
+}
+
+
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #3b5998, #4facfe);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
